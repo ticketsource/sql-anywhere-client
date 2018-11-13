@@ -1,28 +1,18 @@
-SQLAnywhereClient
-=================
+#SQLAnywhereClient
 
-Classe para conexão com banco de dados Sybase com PHP baseada na biblioteca sqlanywhere.
-Class for connection with database Sybase with PHP, created for PHP library SqlAnywhere.
-
-The development was based on PDO Native Class.
-
-TODO:
-- More tests.
+Client PHP package for connecting with SAP SQL Anywhere databases via the 
+[official extension](https://wiki.scn.sap.com/wiki/display/SQLANY/The+SAP+SQL+Anywhere+PHP+Module).
  
-## Installation
-=================
+##Installation
 
-1- First install sqlanywhere module for PHP [Click Here!](http://scn.sap.com/docs/DOC-40537).
+1. [Install the SAP SQL Anywhere PHP extension](https://wiki.scn.sap.com/wiki/display/SQLANY/Getting+Started+with+SAP+SQL+Anywhere+and+PHP).
+2. Use composer to install this package:
+    ```
+    composer require ticketsource/sql-anywhere-client
+    ```
 
-2- Use composer to install this package adding the lines bellow in the require section `require`:
-    // ...
-    "require": {
-        "cagartner/SQLAnywhereClient": "dev-master"
-    },
-    // ...
-
-# How to use
-Bellow have some examples of how to use this class.
+## How to use
+Below are some examples of how to use this package.
 
 ### Connection `SQLAnywhereClient::__construct`:
 
@@ -30,7 +20,7 @@ Bellow have some examples of how to use this class.
 <?php
     require '../vendor/autoload.php';
 
-    use Cagartner\SQLAnywhereClient;
+    use TicketSource\SQLAnywhereClient;
 
     try {
         $dns = "uid={user};pwd={password};ENG={database-name};commlinks=tcpip{host={host};port={port}}";
@@ -40,7 +30,6 @@ Bellow have some examples of how to use this class.
     }
 ?>
 ```
-Você pode definir duas opções iniciais junto com a conexão, que são as seguintes: `auto_commit` e `is_persistent`.
 You can define two initials configuration params with the connection: `auto_commit` and `is_persistent`.
 
 * `auto_commit` Enable auto commit, default is `true`;
@@ -50,7 +39,7 @@ You can define two initials configuration params with the connection: `auto_comm
 <?php
     require '../vendor/autoload.php';
 
-    use Cagartner\SQLAnywhereClient;
+    use TicketSource\SQLAnywhereClient;
 
     try {
         $dns = "uid={uid};pwd={password};ENG={};commlinks=tcpip{host={host};port={password}}";
