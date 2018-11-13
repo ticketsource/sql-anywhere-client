@@ -1,19 +1,23 @@
 {
-    "name": "cagartner/sql-anywhere-client",
-    "description": "Client for connection with sybase",
+    "name": "ticketsource/sql-anywhere-client",
+    "description": "SAP SQL Anywhere PHP client library",
     "license": "MIT",
     "authors": [
         {
             "name": "Carlos Augusto Gartner",
             "email": "contato@carlosgartner.com.br"
+        },
+        {
+            "name": "TicketSource Developers",
+            "email": "developers@ticketsource.co.uk"
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=7.0"
     },
     "autoload": {
         "psr-0": {
-            "Cagartner": "src/"
+            "TicketSource": "src/"
         }
     }
 }

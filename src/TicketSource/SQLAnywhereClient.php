@@ -1,7 +1,7 @@
-<?php namespace Cagartner;
+<?php namespace TicketSource;
 
-use Cagartner\SQLAnywherePrepared AS SQLAnywherePrepared, 
-Cagartner\SQLAnywhereQuery AS SQLAnywhereQuery,
+use TicketSource\SQLAnywherePrepared AS SQLAnywherePrepared,
+TicketSource\SQLAnywhereQuery AS SQLAnywhereQuery,
 Exception;
 
 /**

@@ -2,7 +2,7 @@
 		
 require '../vendor/autoload.php';
 
-use Cagartner\SQLAnywhereClient AS PDO;
+use TicketSource\SQLAnywhereClient AS PDO;
 
 try {
 

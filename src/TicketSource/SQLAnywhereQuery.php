@@ -1,6 +1,6 @@
-<?php namespace Cagartner;
+<?php namespace TicketSource;
 
-use Cagartner\SQLAnywhereClient;
+use TicketSource\SQLAnywhereClient;
 
 /**
  * Classe para trabalhar com a query

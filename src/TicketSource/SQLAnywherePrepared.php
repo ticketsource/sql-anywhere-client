@@ -1,6 +1,6 @@
-<?php namespace Cagartner;
+<?php namespace TicketSource;
 
-use Cagartner\SQLAnywhereQuery AS SQLAnywhereQuery;
+use TicketSource\SQLAnywhereQuery AS SQLAnywhereQuery;
 
 /**
 * @author Carlos A Gartner <contato@carlosgartner.com.br>
