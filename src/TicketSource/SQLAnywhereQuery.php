@@ -181,4 +181,12 @@ class SQLAnywhereQuery
 	{
 		return sasql_free_result( $this->result );
 	}
+
+    /**
+     * @return mixed
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
 }
